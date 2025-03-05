@@ -3,33 +3,125 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0728D7F2D770BA1009D8D11 /* Si8c_v3_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0728D7E2D770BA1009D8D11 /* Si8c_v3_1App.swift */; };
-		A0728D812D770BA1009D8D11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0728D802D770BA1009D8D11 /* ContentView.swift */; };
-		A0728D832D770BA3009D8D11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0728D822D770BA3009D8D11 /* Assets.xcassets */; };
-		A0728D862D770BA3009D8D11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0728D852D770BA3009D8D11 /* Preview Assets.xcassets */; };
-		A0728D882D770BA3009D8D11 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0728D872D770BA3009D8D11 /* Persistence.swift */; };
-		A0728D8B2D770BA3009D8D11 /* Si8c_v3_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0728D892D770BA3009D8D11 /* Si8c_v3_1.xcdatamodeld */; };
+		A025D6472D776AE300F9B62B /* SwiftRedis in Frameworks */ = {isa = PBXBuildFile; productRef = A025D6462D776AE300F9B62B /* SwiftRedis */; };
+		OBJ_101 /* Redis+Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Redis+Basic.swift */; };
+		OBJ_102 /* Redis+Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Redis+Geo.swift */; };
+		OBJ_103 /* Redis+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Redis+Hash.swift */; };
+		OBJ_104 /* Redis+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Redis+List.swift */; };
+		OBJ_105 /* Redis+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Redis+Set.swift */; };
+		OBJ_106 /* Redis+SortedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Redis+SortedSet.swift */; };
+		OBJ_107 /* Redis.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Redis.swift */; };
+		OBJ_108 /* RedisInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* RedisInfo.swift */; };
+		OBJ_109 /* RedisMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* RedisMisc.swift */; };
+		OBJ_110 /* RedisMulti+Basic.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* RedisMulti+Basic.swift */; };
+		OBJ_111 /* RedisMulti+Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* RedisMulti+Geo.swift */; };
+		OBJ_112 /* RedisMulti+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* RedisMulti+Hash.swift */; };
+		OBJ_113 /* RedisMulti+List.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* RedisMulti+List.swift */; };
+		OBJ_114 /* RedisMulti+Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* RedisMulti+Set.swift */; };
+		OBJ_115 /* RedisMulti+SortedSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* RedisMulti+SortedSet.swift */; };
+		OBJ_116 /* RedisMulti.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* RedisMulti.swift */; };
+		OBJ_117 /* RedisResp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* RedisResp.swift */; };
+		OBJ_119 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "bluesocket::Socket::Product" /* Socket.framework */; };
+		OBJ_126 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Package.swift */; };
+		OBJ_61 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ContentView.swift */; };
+		OBJ_62 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ListModel.swift */; };
+		OBJ_63 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* WalletModel.swift */; };
+		OBJ_64 /* RedisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* RedisService.swift */; };
+		OBJ_65 /* Si8c_v3_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Si8c_v3_1App.swift */; };
+		OBJ_66 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* MainViewModel.swift */; };
+		OBJ_67 /* LeftPaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* LeftPaneView.swift */; };
+		OBJ_68 /* MiddlePaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* MiddlePaneView.swift */; };
+		OBJ_69 /* RightPaneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* RightPaneView.swift */; };
+		OBJ_72 /* Socket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "bluesocket::Socket::Product" /* Socket.framework */; };
+		OBJ_82 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_87 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Socket.swift */; };
+		OBJ_88 /* SocketProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* SocketProtocols.swift */; };
+		OBJ_89 /* SocketUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* SocketUtils.swift */; };
+		OBJ_96 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Package.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A025D6432D776A3500F9B62B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "bluesocket::Socket";
+			remoteInfo = Socket;
+		};
+		A025D6442D776A3500F9B62B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "bluesocket::Socket";
+			remoteInfo = Socket;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		A0728D7B2D770BA1009D8D11 /* Si8c_v3.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Si8c_v3.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0728D7E2D770BA1009D8D11 /* Si8c_v3_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Si8c_v3_1App.swift; sourceTree = "<group>"; };
-		A0728D802D770BA1009D8D11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A0728D822D770BA3009D8D11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A0728D852D770BA3009D8D11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A0728D872D770BA3009D8D11 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		A0728D8A2D770BA3009D8D11 /* Si8c_v3_1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Si8c_v3_1.xcdatamodel; sourceTree = "<group>"; };
-		A0728D8C2D770BA3009D8D11 /* Si8c_v3_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Si8c_v3_1.entitlements; sourceTree = "<group>"; };
+		OBJ_10 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		OBJ_12 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		OBJ_13 /* WalletModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		OBJ_15 /* RedisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisService.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Si8c_v3_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Si8c_v3_1App.swift; sourceTree = "<group>"; };
+		OBJ_18 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		OBJ_20 /* LeftPaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftPaneView.swift; sourceTree = "<group>"; };
+		OBJ_21 /* MiddlePaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlePaneView.swift; sourceTree = "<group>"; };
+		OBJ_22 /* RightPaneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightPaneView.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Redis+Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redis+Basic.swift"; sourceTree = "<group>"; };
+		OBJ_28 /* Redis+Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redis+Geo.swift"; sourceTree = "<group>"; };
+		OBJ_29 /* Redis+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redis+Hash.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* Redis+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redis+List.swift"; sourceTree = "<group>"; };
+		OBJ_31 /* Redis+Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redis+Set.swift"; sourceTree = "<group>"; };
+		OBJ_32 /* Redis+SortedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Redis+SortedSet.swift"; sourceTree = "<group>"; };
+		OBJ_33 /* Redis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Redis.swift; sourceTree = "<group>"; };
+		OBJ_34 /* RedisInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisInfo.swift; sourceTree = "<group>"; };
+		OBJ_35 /* RedisMisc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisMisc.swift; sourceTree = "<group>"; };
+		OBJ_36 /* RedisMulti+Basic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedisMulti+Basic.swift"; sourceTree = "<group>"; };
+		OBJ_37 /* RedisMulti+Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedisMulti+Geo.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* RedisMulti+Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedisMulti+Hash.swift"; sourceTree = "<group>"; };
+		OBJ_39 /* RedisMulti+List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedisMulti+List.swift"; sourceTree = "<group>"; };
+		OBJ_40 /* RedisMulti+Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedisMulti+Set.swift"; sourceTree = "<group>"; };
+		OBJ_41 /* RedisMulti+SortedSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RedisMulti+SortedSet.swift"; sourceTree = "<group>"; };
+		OBJ_42 /* RedisMulti.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisMulti.swift; sourceTree = "<group>"; };
+		OBJ_43 /* RedisResp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedisResp.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eran/LocalFiles/2025/v3/Si8c_v3/Si8c_v3.1/.build/checkouts/Kitura-redis/Package.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		OBJ_48 /* SocketProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketProtocols.swift; sourceTree = "<group>"; };
+		OBJ_49 /* SocketUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtils.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = /Users/eran/LocalFiles/2025/v3/Si8c_v3/Si8c_v3.1/.build/checkouts/BlueSocket/Package.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Si8c_v3.1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Si8c_v3.1; sourceTree = SOURCE_ROOT; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* Si8c_v3_1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Si8c_v3_1.entitlements; sourceTree = "<group>"; };
+		"bluesocket::Socket::Product" /* Socket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Socket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"kitura-redis::SwiftRedis::Product" /* SwiftRedis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftRedis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"si8c_v3.1::Si8c_v3.1::Product" /* Si8c_v3_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Si8c_v3_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A0728D782D770BA1009D8D11 /* Frameworks */ = {
+		OBJ_118 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
+			files = (
+				OBJ_119 /* Socket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				A025D6472D776AE300F9B62B /* SwiftRedis in Frameworks */,
+				OBJ_72 /* Socket.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,326 +129,775 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A0728D722D770BA1009D8D11 = {
+		OBJ_11 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A0728D7D2D770BA1009D8D11 /* Si8c_v3.1 */,
-				A0728D7C2D770BA1009D8D11 /* Products */,
+				OBJ_12 /* ListModel.swift */,
+				OBJ_13 /* WalletModel.swift */,
 			);
+			path = Models;
 			sourceTree = "<group>";
 		};
-		A0728D7C2D770BA1009D8D11 /* Products */ = {
+		OBJ_14 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A0728D7B2D770BA1009D8D11 /* Si8c_v3.1.app */,
+				OBJ_15 /* RedisService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		OBJ_17 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_18 /* MainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* LeftPaneView.swift */,
+				OBJ_21 /* MiddlePaneView.swift */,
+				OBJ_22 /* RightPaneView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		OBJ_23 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_24 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_25 /* SwiftRedis 2.1.200 */,
+				OBJ_45 /* Socket 1.0.200 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_25 /* SwiftRedis 2.1.200 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_26 /* SwiftRedis */,
+				OBJ_44 /* Package.swift */,
+			);
+			name = "SwiftRedis 2.1.200";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_26 /* SwiftRedis */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_27 /* Redis+Basic.swift */,
+				OBJ_28 /* Redis+Geo.swift */,
+				OBJ_29 /* Redis+Hash.swift */,
+				OBJ_30 /* Redis+List.swift */,
+				OBJ_31 /* Redis+Set.swift */,
+				OBJ_32 /* Redis+SortedSet.swift */,
+				OBJ_33 /* Redis.swift */,
+				OBJ_34 /* RedisInfo.swift */,
+				OBJ_35 /* RedisMisc.swift */,
+				OBJ_36 /* RedisMulti+Basic.swift */,
+				OBJ_37 /* RedisMulti+Geo.swift */,
+				OBJ_38 /* RedisMulti+Hash.swift */,
+				OBJ_39 /* RedisMulti+List.swift */,
+				OBJ_40 /* RedisMulti+Set.swift */,
+				OBJ_41 /* RedisMulti+SortedSet.swift */,
+				OBJ_42 /* RedisMulti.swift */,
+				OBJ_43 /* RedisResp.swift */,
+			);
+			name = SwiftRedis;
+			path = ".build/checkouts/Kitura-redis/Sources/SwiftRedis";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_45 /* Socket 1.0.200 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_46 /* Socket */,
+				OBJ_50 /* Package.swift */,
+			);
+			name = "Socket 1.0.200";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_46 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_47 /* Socket.swift */,
+				OBJ_48 /* SocketProtocols.swift */,
+				OBJ_49 /* SocketUtils.swift */,
+			);
+			name = Socket;
+			path = .build/checkouts/BlueSocket/Sources/Socket;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* Si8c_v3_1App.swift */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_23 /* Tests */,
+				OBJ_24 /* Dependencies */,
+				OBJ_51 /* Products */,
+				OBJ_55 /* Si8c_v3.1 */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"si8c_v3.1::Si8c_v3.1::Product" /* Si8c_v3_1.framework */,
+				"bluesocket::Socket::Product" /* Socket.framework */,
+				"kitura-redis::SwiftRedis::Product" /* SwiftRedis.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A0728D7D2D770BA1009D8D11 /* Si8c_v3.1 */ = {
+		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A0728D7E2D770BA1009D8D11 /* Si8c_v3_1App.swift */,
-				A0728D802D770BA1009D8D11 /* ContentView.swift */,
-				A0728D822D770BA3009D8D11 /* Assets.xcassets */,
-				A0728D872D770BA3009D8D11 /* Persistence.swift */,
-				A0728D8C2D770BA3009D8D11 /* Si8c_v3_1.entitlements */,
-				A0728D892D770BA3009D8D11 /* Si8c_v3_1.xcdatamodeld */,
-				A0728D842D770BA3009D8D11 /* Preview Content */,
+				OBJ_8 /* Si8c_v3.1 */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* Si8c_v3.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* Si8c_v3_1.entitlements */,
+				OBJ_10 /* ContentView.swift */,
+				OBJ_11 /* Models */,
+				OBJ_14 /* Services */,
+				OBJ_17 /* ViewModels */,
+				OBJ_19 /* Views */,
 			);
 			path = Si8c_v3.1;
-			sourceTree = "<group>";
-		};
-		A0728D842D770BA3009D8D11 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				A0728D852D770BA3009D8D11 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A0728D7A2D770BA1009D8D11 /* Si8c_v3.1 */ = {
+		"bluesocket::Socket" /* Socket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A0728D8F2D770BA3009D8D11 /* Build configuration list for PBXNativeTarget "Si8c_v3.1" */;
+			buildConfigurationList = OBJ_83 /* Build configuration list for PBXNativeTarget "Socket" */;
 			buildPhases = (
-				A0728D772D770BA1009D8D11 /* Sources */,
-				A0728D782D770BA1009D8D11 /* Frameworks */,
-				A0728D792D770BA1009D8D11 /* Resources */,
+				OBJ_86 /* Sources */,
+				OBJ_90 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Socket;
+			productName = Socket;
+			productReference = "bluesocket::Socket::Product" /* Socket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"bluesocket::SwiftPMPackageDescription" /* SocketPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_92 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */;
+			buildPhases = (
+				OBJ_95 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketPackageDescription;
+			productName = SocketPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"kitura-redis::SwiftPMPackageDescription" /* SwiftRedisPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_122 /* Build configuration list for PBXNativeTarget "SwiftRedisPackageDescription" */;
+			buildPhases = (
+				OBJ_125 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRedisPackageDescription;
+			productName = SwiftRedisPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"kitura-redis::SwiftRedis" /* SwiftRedis */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_97 /* Build configuration list for PBXNativeTarget "SwiftRedis" */;
+			buildPhases = (
+				OBJ_100 /* Sources */,
+				OBJ_118 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_120 /* PBXTargetDependency */,
+			);
+			name = SwiftRedis;
+			productName = SwiftRedis;
+			productReference = "kitura-redis::SwiftRedis::Product" /* SwiftRedis.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"si8c_v3.1::Si8c_v3.1" /* Si8c_v3.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_57 /* Build configuration list for PBXNativeTarget "Si8c_v3.1" */;
+			buildPhases = (
+				OBJ_60 /* Sources */,
+				OBJ_70 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_75 /* PBXTargetDependency */,
+			);
 			name = Si8c_v3.1;
-			productName = Si8c_v3.1;
-			productReference = A0728D7B2D770BA1009D8D11 /* Si8c_v3.1.app */;
-			productType = "com.apple.product-type.application";
+			packageProductDependencies = (
+				A025D6462D776AE300F9B62B /* SwiftRedis */,
+			);
+			productName = Si8c_v3_1;
+			productReference = "si8c_v3.1::Si8c_v3.1::Product" /* Si8c_v3_1.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"si8c_v3.1::SwiftPMPackageDescription" /* Si8c_v3.1PackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_78 /* Build configuration list for PBXNativeTarget "Si8c_v3.1PackageDescription" */;
+			buildPhases = (
+				OBJ_81 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Si8c_v3.1PackageDescription;
+			productName = Si8c_v3.1PackageDescription;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A0728D732D770BA1009D8D11 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
-				TargetAttributes = {
-					A0728D7A2D770BA1009D8D11 = {
-						CreatedOnToolsVersion = 14.1;
-					};
-				};
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = A0728D762D770BA1009D8D11 /* Build configuration list for PBXProject "Si8c_v3.1" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Si8c_v3.1" */;
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = A0728D722D770BA1009D8D11;
-			productRefGroup = A0728D7C2D770BA1009D8D11 /* Products */;
+			mainGroup = OBJ_5 /*  */;
+			packageReferences = (
+				A025D6452D776AE300F9B62B /* XCRemoteSwiftPackageReference "Kitura-redis" */,
+			);
+			productRefGroup = OBJ_51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A0728D7A2D770BA1009D8D11 /* Si8c_v3.1 */,
+				"si8c_v3.1::Si8c_v3.1" /* Si8c_v3.1 */,
+				"si8c_v3.1::SwiftPMPackageDescription" /* Si8c_v3.1PackageDescription */,
+				"bluesocket::Socket" /* Socket */,
+				"bluesocket::SwiftPMPackageDescription" /* SocketPackageDescription */,
+				"kitura-redis::SwiftRedis" /* SwiftRedis */,
+				"kitura-redis::SwiftPMPackageDescription" /* SwiftRedisPackageDescription */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		A0728D792D770BA1009D8D11 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_100 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
 			files = (
-				A0728D862D770BA3009D8D11 /* Preview Assets.xcassets in Resources */,
-				A0728D832D770BA3009D8D11 /* Assets.xcassets in Resources */,
+				OBJ_101 /* Redis+Basic.swift in Sources */,
+				OBJ_102 /* Redis+Geo.swift in Sources */,
+				OBJ_103 /* Redis+Hash.swift in Sources */,
+				OBJ_104 /* Redis+List.swift in Sources */,
+				OBJ_105 /* Redis+Set.swift in Sources */,
+				OBJ_106 /* Redis+SortedSet.swift in Sources */,
+				OBJ_107 /* Redis.swift in Sources */,
+				OBJ_108 /* RedisInfo.swift in Sources */,
+				OBJ_109 /* RedisMisc.swift in Sources */,
+				OBJ_110 /* RedisMulti+Basic.swift in Sources */,
+				OBJ_111 /* RedisMulti+Geo.swift in Sources */,
+				OBJ_112 /* RedisMulti+Hash.swift in Sources */,
+				OBJ_113 /* RedisMulti+List.swift in Sources */,
+				OBJ_114 /* RedisMulti+Set.swift in Sources */,
+				OBJ_115 /* RedisMulti+SortedSet.swift in Sources */,
+				OBJ_116 /* RedisMulti.swift in Sources */,
+				OBJ_117 /* RedisResp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		A0728D772D770BA1009D8D11 /* Sources */ = {
+		OBJ_125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				A0728D882D770BA3009D8D11 /* Persistence.swift in Sources */,
-				A0728D8B2D770BA3009D8D11 /* Si8c_v3_1.xcdatamodeld in Sources */,
-				A0728D812D770BA1009D8D11 /* ContentView.swift in Sources */,
-				A0728D7F2D770BA1009D8D11 /* Si8c_v3_1App.swift in Sources */,
+				OBJ_126 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_61 /* ContentView.swift in Sources */,
+				OBJ_62 /* ListModel.swift in Sources */,
+				OBJ_63 /* WalletModel.swift in Sources */,
+				OBJ_64 /* RedisService.swift in Sources */,
+				OBJ_65 /* Si8c_v3_1App.swift in Sources */,
+				OBJ_66 /* MainViewModel.swift in Sources */,
+				OBJ_67 /* LeftPaneView.swift in Sources */,
+				OBJ_68 /* MiddlePaneView.swift in Sources */,
+				OBJ_69 /* RightPaneView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_82 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_87 /* Socket.swift in Sources */,
+				OBJ_88 /* SocketProtocols.swift in Sources */,
+				OBJ_89 /* SocketUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_96 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		OBJ_120 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "bluesocket::Socket" /* Socket */;
+			targetProxy = A025D6432D776A3500F9B62B /* PBXContainerItemProxy */;
+		};
+		OBJ_75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "bluesocket::Socket" /* Socket */;
+			targetProxy = A025D6442D776A3500F9B62B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		A0728D8D2D770BA3009D8D11 /* Debug */ = {
+		OBJ_123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		A0728D8E2D770BA3009D8D11 /* Release */ = {
+		OBJ_124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		A0728D902D770BA3009D8D11 /* Debug */ = {
+		OBJ_3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Si8c_v3.1/Si8c_v3_1.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "$(AVAILABLE_PLATFORMS)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Si8c_v3.1/Preview Content\"";
-				DEVELOPMENT_TEAM = 3AN7LNAVG4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3AN7LNAVG4;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Si8c_v3.1.xcodeproj/Si8c_v3_1_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litecube.Si8c-v3-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Si8c-v3-1";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Si8c_v3.1;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CURRENT_PROJECT_VERSION = 1;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 3AN7LNAVG4;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Si8c_v3.1.xcodeproj/Si8c_v3_1_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Si8c-v3-1";
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Si8c_v3.1;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -package-description-version 5.7.0";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		A0728D912D770BA3009D8D11 /* Release */ = {
+		OBJ_80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Si8c_v3.1/Si8c_v3_1.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -package-description-version 5.7.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Si8c_v3.1/Preview Content\"";
-				DEVELOPMENT_TEAM = 3AN7LNAVG4;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Si8c_v3.1.xcodeproj/Socket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.litecube.Si8c-v3-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Socket;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Si8c_v3.1.xcodeproj/Socket_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Socket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Socket;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/ManifestAPI -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.0.sdk -package-description-version 5.0.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		OBJ_98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Si8c_v3.1.xcodeproj/SwiftRedis_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftRedis;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftRedis;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DRIVERKIT_DEPLOYMENT_TARGET = 19.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Si8c_v3.1.xcodeproj/SwiftRedis_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftRedis;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = SwiftRedis;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A0728D762D770BA1009D8D11 /* Build configuration list for PBXProject "Si8c_v3.1" */ = {
+		OBJ_122 /* Build configuration list for PBXNativeTarget "SwiftRedisPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0728D8D2D770BA3009D8D11 /* Debug */,
-				A0728D8E2D770BA3009D8D11 /* Release */,
+				OBJ_123 /* Debug */,
+				OBJ_124 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A0728D8F2D770BA3009D8D11 /* Build configuration list for PBXNativeTarget "Si8c_v3.1" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "Si8c_v3.1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0728D902D770BA3009D8D11 /* Debug */,
-				A0728D912D770BA3009D8D11 /* Release */,
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_57 /* Build configuration list for PBXNativeTarget "Si8c_v3.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_58 /* Debug */,
+				OBJ_59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_78 /* Build configuration list for PBXNativeTarget "Si8c_v3.1PackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_79 /* Debug */,
+				OBJ_80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_83 /* Build configuration list for PBXNativeTarget "Socket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_84 /* Debug */,
+				OBJ_85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_92 /* Build configuration list for PBXNativeTarget "SocketPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_93 /* Debug */,
+				OBJ_94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_97 /* Build configuration list for PBXNativeTarget "SwiftRedis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_98 /* Debug */,
+				OBJ_99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCVersionGroup section */
-		A0728D892D770BA3009D8D11 /* Si8c_v3_1.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A0728D8A2D770BA3009D8D11 /* Si8c_v3_1.xcdatamodel */,
-			);
-			currentVersion = A0728D8A2D770BA3009D8D11 /* Si8c_v3_1.xcdatamodel */;
-			path = Si8c_v3_1.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+/* Begin XCRemoteSwiftPackageReference section */
+		A025D6452D776AE300F9B62B /* XCRemoteSwiftPackageReference "Kitura-redis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Kitura-redis.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
 		};
-/* End XCVersionGroup section */
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A025D6462D776AE300F9B62B /* SwiftRedis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A025D6452D776AE300F9B62B /* XCRemoteSwiftPackageReference "Kitura-redis" */;
+			productName = SwiftRedis;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = A0728D732D770BA1009D8D11 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }

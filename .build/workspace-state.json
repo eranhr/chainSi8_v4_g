@@ -1,0 +1,44 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "bluesocket",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/Kitura/BlueSocket.git",
+          "name" : "Socket"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "c9894fd117457f1d006575fbfb2fdfd6f79eac03",
+            "version" : "1.0.200"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "BlueSocket"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "kitura-redis",
+          "kind" : "remoteSourceControl",
+          "location" : "https://github.com/Kitura/Kitura-redis.git",
+          "name" : "SwiftRedis"
+        },
+        "state" : {
+          "checkoutState" : {
+            "revision" : "bdb603ac7aa662f522a4e4671908497e2dd152c0",
+            "version" : "2.1.200"
+          },
+          "name" : "sourceControlCheckout"
+        },
+        "subpath" : "Kitura-redis"
+      }
+    ]
+  },
+  "version" : 5
+}
